@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "skills": "Compétences",
+    "parcours": "Parcours",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "title": "Ingénieur en Informatique & SIG",
+    "bio": "Ingénieur en informatique avec formation en SIG, passionné par l'analyse de données et la modélisation appliquée à l'environnement, aux ressources en eau et au changement climatique.",
+    "hire": "Me Contacter",
+    "cv": "Télécharger CV"
+  },
+  "about": {
+    "tag": "Qui suis-je",
+    "title": "Ingénieur Informatique & Analyste de Données",
+    "p1": "Je suis RANDRIANANDRASANA Alain Johny, ingénieur en informatique avec une formation spécialisée en Systèmes d'Information Géographique (SIG). Passionné par l'analyse de données et la modélisation appliquée à l'environnement.",
+    "p2": "Compétent en Python, bases de données et traitement de données, je suis motivé à contribuer à des travaux de recherche liés aux ressources en eau et au changement climatique.",
+    "cta": "Travaillons ensemble",
+    "stats": ["Géomatique", "Data & Scripts", "Informatique"]
+  },
+  "services": {
+    "title": ["Mes", "Services"],
+    "items": ["Analyse de Données", "SIG & Cartographie", "Modélisation", "Ressources en Eau", "Changement Climatique", "Environnement"],
+    "descs": [
+      "Traitement et analyse de données environnementales avec Python, pandas et NumPy.",
+      "Systèmes d'Information Géographique, cartographie et géomatique appliquée.",
+      "Modélisation statistique et prédictive pour l'environnement et le climat.",
+      "Études et analyses liées à la gestion des ressources hydriques.",
+      "Recherche et modélisation des impacts du changement climatique.",
+      "Applications environnementales et développement durable."
+    ]
+  },
+  "skills": {
+    "title": ["Mes", "Compétences"],
+    "cats": ["Programmation & Data", "SIG & Géospatial", "Systèmes & Réseaux"]
+  },
+  "education": {
+    "title": ["Parcours", "& Expériences"],
+    "formation": "Formation",
+    "experience": "Expériences"
+  },
+  "projects": {
+    "title": ["Mes", "Projets"],
+    "code": "Code",
+    "live": "Démo",
+    "items": [
+      { "title": "Plateforme E-Commerce", "desc": "Application full-stack avec React, Node.js, MongoDB et paiements Stripe." },
+      { "title": "Gestionnaire de Tâches", "desc": "Outil collaboratif avec mises à jour en temps réel via Socket.io." },
+      { "title": "Portfolio Web", "desc": "Portfolio animé avec particles.js, Framer Motion et React." },
+      { "title": "Dashboard Météo", "desc": "Application météo en temps réel avec géolocalisation et OpenWeather API." }
+    ]
+  },
+  "contact": {
+    "title": ["Contactez", "Moi"],
+    "subtitle": "Travaillons ensemble",
+    "desc": "Vous avez un projet ou une opportunité de recherche ? N'hésitez pas à me contacter.",
+    "labels": ["Email", "Téléphone", "Localisation"],
+    "placeholders": ["Votre nom", "Votre email", "Objet", "Votre message"],
+    "send": "Envoyer",
+    "sent": "✓ Message envoyé !"
+  },
+  "footer": {
+    "tagline": "Ingénieur Informatique & SIG — Antananarivo, Madagascar"
+  }
+}

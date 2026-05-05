@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "parcours": "Career",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "title": "IT Engineer & GIS Specialist",
+    "bio": "IT engineer with GIS training, passionate about data analysis and environmental modeling, water resources and climate change.",
+    "hire": "Hire Me",
+    "cv": "Download CV"
+  },
+  "about": {
+    "tag": "Who I Am",
+    "title": "IT Engineer & Data Analyst",
+    "p1": "I'm RANDRIANANDRASANA Alain Johny, an IT engineer with specialized training in Geographic Information Systems (GIS). Passionate about data analysis and environmental modeling.",
+    "p2": "Skilled in Python, databases and data processing, I am motivated to contribute to research related to water resources and climate change.",
+    "cta": "Let's work together",
+    "stats": ["Geomatics", "Data & Scripts", "Engineering"]
+  },
+  "services": {
+    "title": ["My", "Services"],
+    "items": ["Data Analysis", "GIS & Mapping", "Modeling", "Water Resources", "Climate Change", "Environment"],
+    "descs": [
+      "Processing and analysis of environmental data with Python, pandas and NumPy.",
+      "Geographic Information Systems, mapping and applied geomatics.",
+      "Statistical and predictive modeling for environment and climate.",
+      "Studies and analyses related to water resource management.",
+      "Research and modeling of climate change impacts.",
+      "Environmental applications and sustainable development."
+    ]
+  },
+  "skills": {
+    "title": ["My", "Skills"],
+    "cats": ["Programming & Data", "GIS & Geospatial", "Systems & Networks"]
+  },
+  "education": {
+    "title": ["Career", "& Experience"],
+    "formation": "Education",
+    "experience": "Experience"
+  },
+  "projects": {
+    "title": ["My", "Projects"],
+    "code": "Code",
+    "live": "Live",
+    "items": [
+      { "title": "E-Commerce Platform", "desc": "Full-stack app with React, Node.js, MongoDB and Stripe payments." },
+      { "title": "Task Manager App", "desc": "Collaborative task management with real-time updates using Socket.io." },
+      { "title": "Portfolio Website", "desc": "Modern animated portfolio with particles.js, Framer Motion and React." },
+      { "title": "Weather Dashboard", "desc": "Real-time weather app with geolocation and OpenWeather API." }
+    ]
+  },
+  "contact": {
+    "title": ["Contact", "Me"],
+    "subtitle": "Let's work together",
+    "desc": "Have a project or research opportunity? Feel free to reach out.",
+    "labels": ["Email", "Phone", "Location"],
+    "placeholders": ["Your name", "Your email", "Subject", "Your message"],
+    "send": "Send Message",
+    "sent": "✓ Message Sent!"
+  },
+  "footer": {
+    "tagline": "IT Engineer & GIS Specialist — Antananarivo, Madagascar"
+  }
+}
