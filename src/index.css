@@ -29,10 +29,43 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background: var(--bg);
+  background: linear-gradient(135deg, #0b1a2b 0%, #0f2236 30%, #0d1f35 55%, #111827 80%, #0b1a2b 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
   color: var(--text);
   overflow-x: hidden;
-  transition: background 0.3s, color 0.3s;
+  transition: color 0.3s;
+}
+
+[data-theme='light'] body,
+body[data-theme='light'] {
+  background: linear-gradient(135deg, #eef3f8 0%, #dce8f5 30%, #e8f0f8 55%, #f0f5fb 80%, #eef3f8 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Shimmer effect */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.15) 50%, transparent 60%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 ::-webkit-scrollbar { width: 6px; }

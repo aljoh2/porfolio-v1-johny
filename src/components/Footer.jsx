@@ -13,7 +13,7 @@ export default function Footer() {
         <p className="text-[var(--text-sub)] text-sm">{t('footer.tagline')}</p>
         <div className="flex gap-3">
           {[
-            { href: 'https://github.com', icon: <FaGithub /> },
+            { href: 'https://github.com/aljoh2', icon: <FaGithub /> },
             { href: 'https://www.linkedin.com/in/johny-alain-randrianandrasana-27b6aa1a3/', icon: <FaLinkedin /> },
             { href: 'https://wa.me/261348485184', icon: <FaWhatsapp /> },
           ].map((s, i) => (

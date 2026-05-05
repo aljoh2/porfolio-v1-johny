@@ -98,7 +98,7 @@ export default function Contact() {
           <p className="text-[var(--text-muted)] leading-relaxed mb-6">{t('contact.desc')}</p>
           {labels.map((label, i) => (
             <div key={i} className="flex items-center gap-4 mb-5">
-              <div className="w-11 h-11 bg-[rgba(42,127,193,0.1)] border border-[var(--gold-dim)] rounded-xl flex items-center justify-center text-[var(--gold)] flex-shrink-0">
+              <div className="shimmer w-11 h-11 bg-[rgba(42,127,193,0.1)] border border-[var(--gold-dim)] rounded-xl flex items-center justify-center text-[var(--gold)] flex-shrink-0">
                 {contactIcons[i]}
               </div>
               <div>

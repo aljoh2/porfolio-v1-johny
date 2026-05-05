@@ -65,7 +65,7 @@ export default function Skills() {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 max-w-[1100px] mx-auto mb-12">
         {categories.map((cat, ci) => (
           <motion.div key={ci}
-            className="bg-[var(--bg)] border border-[var(--gold-dim)] rounded-2xl p-6"
+            className="shimmer bg-[var(--bg)] border border-[var(--gold-dim)] rounded-2xl p-6"
             initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: ci * 0.15 }}
           >
@@ -98,7 +98,7 @@ export default function Skills() {
       <div className="flex flex-wrap justify-center gap-3 max-w-[800px] mx-auto">
         {techIcons.map((tech, i) => (
           <motion.div key={i}
-            className="flex flex-col items-center gap-1.5 bg-[var(--bg)] border border-[var(--gold-dim)] rounded-xl px-4 py-3 min-w-[70px] cursor-default hover:border-[var(--gold)] hover:shadow-[0_4px_20px_rgba(42,127,193,0.2)] transition-all duration-300"
+            className="shimmer flex flex-col items-center gap-1.5 bg-[var(--bg)] border border-[var(--gold-dim)] rounded-xl px-4 py-3 min-w-[70px] cursor-default hover:border-[var(--gold)] hover:shadow-[0_4px_20px_rgba(42,127,193,0.2)] transition-all duration-300"
             initial={{ opacity: 0, scale: 0.7 }} whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.05 }}
             whileHover={{ y: -5, scale: 1.1 }}

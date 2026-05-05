@@ -3,8 +3,8 @@ import { FaGraduationCap, FaBriefcase, FaMapMarkerAlt, FaCalendarAlt } from 'rea
 import { useTranslation } from 'react-i18next'
 
 const education = [
-  { degree: 'Master en SIGD', school: "Ecole de Management et d'Innovation Technologique", location: 'Fianarantsoa', year: '2024' },
-  { degree: 'Licence en Informatique', school: "Ecole de Management et d'Innovation Technologique", location: 'Fianarantsoa', year: '2020' },
+  { degree: 'Master en SIGD', school: "École de Management et d'Innovation Technologique", location: 'Fianarantsoa', year: '2024' },
+  { degree: 'Licence en Informatique', school: "École de Management et d'Innovation Technologique", location: 'Fianarantsoa', year: '2020' },
   { degree: 'Baccalauréat', school: 'LPCSVP', location: 'Farafangana', year: '2016' },
 ]
 
@@ -57,7 +57,13 @@ export default function Education() {
           <div className="relative pl-2 border-l-2 border-l-[linear-gradient(to_bottom,var(--gold),transparent)]" style={{ borderImage: 'linear-gradient(to bottom, var(--gold), transparent) 1' }}>
             {education.map((e, i) => (
               <TimelineItem key={i} fromLeft delay={i * 0.15}>
-                <div className="bg-[var(--bg)] border border-[var(--gold-dim)] rounded-xl p-4 hover:border-[var(--gold)] transition-colors">
+                <div className="relative overflow-hidden bg-[var(--bg)] border border-[var(--gold-dim)] rounded-xl p-4 hover:border-[var(--gold)] transition-colors group">
+                  {/* Shimmer Effect */}
+                  <motion.div 
+                    className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-[rgba(212,175,55,0.03)] to-transparent -skew-x-12"
+                    animate={{ x: ['-100%', '100%'] }}
+                    transition={{ repeat: Infinity, duration: 4, ease: "linear", delay: i * 0.2 }}
+                  />
                   <span className="flex items-center gap-1.5 text-[var(--gold)] text-xs font-semibold mb-1"><FaCalendarAlt />{e.year}</span>
                   <h4 className="text-[var(--text)] font-semibold text-sm mb-1">{e.degree}</h4>
                   <p className="text-[var(--text-muted)] text-xs mb-1">{e.school}</p>
@@ -76,7 +82,13 @@ export default function Education() {
           <div className="relative pl-2" style={{ borderLeft: '2px solid', borderImage: 'linear-gradient(to bottom, var(--gold), transparent) 1' }}>
             {experiences.map((exp, i) => (
               <TimelineItem key={i} fromLeft={false} delay={i * 0.15}>
-                <div className="bg-[var(--bg)] border border-[var(--gold-dim)] rounded-xl p-4 hover:border-[var(--gold)] transition-colors">
+                <div className="relative overflow-hidden bg-[var(--bg)] border border-[var(--gold-dim)] rounded-xl p-4 hover:border-[var(--gold)] transition-colors group">
+                  {/* Shimmer Effect */}
+                  <motion.div 
+                    className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-[rgba(212,175,55,0.03)] to-transparent -skew-x-12"
+                    animate={{ x: ['-100%', '100%'] }}
+                    transition={{ repeat: Infinity, duration: 4, ease: "linear", delay: i * 0.3 }}
+                  />
                   <span className="flex items-center gap-1.5 text-[var(--gold)] text-xs font-semibold mb-1"><FaCalendarAlt />{exp.period}</span>
                   <h4 className="text-[var(--text)] font-semibold text-sm mb-1">{exp.role}</h4>
                   <p className="text-[var(--text-muted)] text-xs mb-1">{exp.company}</p>

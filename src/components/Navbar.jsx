@@ -28,7 +28,6 @@ export default function Navbar() {
     { label: t('nav.services'), icon: <FaCogs />,          href: '#services' },
     { label: t('nav.skills'),   icon: <FaStar />,          href: '#skills' },
     { label: t('nav.parcours'), icon: <FaGraduationCap />, href: '#education' },
-    { label: t('nav.projects'), icon: <FaFolderOpen />,    href: '#projects' },
     { label: t('nav.contact'),  icon: <FaEnvelope />,      href: '#contact' },
   ]
 

@@ -5,23 +5,23 @@
     "services": "Services",
     "skills": "Compétences",
     "parcours": "Parcours",
-    "projects": "Projets",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
     "title": "Ingénieur en Informatique & SIG",
-    "bio": "Ingénieur en informatique avec formation en SIG, passionné par l'analyse de données et la modélisation appliquée à l'environnement, aux ressources en eau et au changement climatique.",
+    "bio": "Ingénieur en informatique spécialisé en SIG, passionné par l'analyse de données et la modélisation appliquée à l'environnement, aux ressources en eau et au changement climatique.",
     "hire": "Me Contacter",
     "cv": "Télécharger CV"
   },
   "about": {
     "tag": "Qui suis-je",
+    "title_h2": ["À propos", "de moi"],
     "title": "Ingénieur Informatique & Analyste de Données",
     "p1": "Je suis RANDRIANANDRASANA Alain Johny, ingénieur en informatique avec une formation spécialisée en Systèmes d'Information Géographique (SIG). Passionné par l'analyse de données et la modélisation appliquée à l'environnement.",
     "p2": "Compétent en Python, bases de données et traitement de données, je suis motivé à contribuer à des travaux de recherche liés aux ressources en eau et au changement climatique.",
     "cta": "Travaillons ensemble",
-    "stats": ["Géomatique", "Data & Scripts", "Informatique"]
+    "stats": ["Géomatique", "Données & Scripts", "Informatique"]
   },
   "services": {
     "title": ["Mes", "Services"],
@@ -37,12 +37,12 @@
   },
   "skills": {
     "title": ["Mes", "Compétences"],
-    "cats": ["Programmation & Data", "SIG & Géospatial", "Systèmes & Réseaux"]
+    "cats": ["Programmation & Données", "SIG & Géospatial", "Systèmes & Réseaux"]
   },
   "education": {
     "title": ["Parcours", "& Expériences"],
-    "formation": "Formation",
-    "experience": "Expériences"
+    "formation": "Formations",
+    "experience": "Expériences Professionnelles"
   },
   "projects": {
     "title": ["Mes", "Projets"],

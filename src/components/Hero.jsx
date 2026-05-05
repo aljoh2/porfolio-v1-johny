@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '../context/ThemeContext'
@@ -48,7 +48,7 @@ export default function Hero() {
           <TypeAnimation
             sequence={[
               'Ingénieur en Informatique | Support IT', 4000,
-              'GIS Specialist', 4000,
+              'Spécialiste SIG', 4000,
               'Développeur Web & Consultant SIG', 4000,
             ]}
             wrapper="h2"
@@ -66,7 +66,7 @@ export default function Hero() {
 
           <div className="flex gap-4 max-[900px]:justify-center">
             {[
-              { href: 'https://github.com', icon: <FaGithub /> },
+              { href: 'https://github.com/aljoh2', icon: <FaGithub /> },
               { href: 'https://www.linkedin.com/in/johny-alain-randrianandrasana-27b6aa1a3/', icon: <FaLinkedin /> },
               { href: 'https://wa.me/261348485184', icon: <FaWhatsapp /> },
             ].map((s, i) => (
@@ -80,14 +80,23 @@ export default function Hero() {
 
         <motion.div className="flex-none flex justify-center" initial={{ opacity: 0, x: 60 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
           <div className="relative w-[340px] h-[400px] max-[900px]:w-[260px] max-[900px]:h-[300px]">
-            <img src={profileImg} alt="Alain Johny" className="w-full h-full object-cover object-top rounded-3xl relative z-10 shadow-[0_20px_60px_rgba(20,38,59,0.5)]" />
+            <motion.img 
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              src={profileImg} 
+              alt="Alain Johny" 
+              className="w-full h-full object-cover object-top rounded-3xl relative z-10 shadow-[0_20px_60px_rgba(20,38,59,0.5)] cursor-pointer" />
             <div className="absolute -top-2 -left-2 right-2 bottom-2 border-2 border-[var(--gold)] rounded-[28px] z-0 opacity-50" />
             <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-[var(--gold)] rounded-2xl z-0 opacity-10" />
-            <div className="absolute bottom-5 -left-5 z-20 bg-[var(--bg-2)] border border-[var(--border)] rounded-xl px-3 py-2.5 flex items-center gap-2 shadow-lg">
-              <div className="w-9 h-9 bg-[var(--gold)] rounded-lg flex items-center justify-center text-white text-sm"><FaMapMarkerAlt /></div>
+            {/* Badge expérience */}
+            <div className="shimmer absolute bottom-5 -right-5 z-20 rounded-xl px-3 py-2.5 flex items-center gap-2 shadow-xl"
+              style={{ background: 'linear-gradient(135deg, rgba(11,26,43,0.95) 0%, rgba(20,38,59,0.98) 100%)', border: '1px solid rgba(42,127,193,0.35)' }}>
+              <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-extrabold text-base"
+                style={{ background: 'linear-gradient(135deg, #2a7fc1 0%, #f0a500 100%)' }}>4</div>
               <div>
-                <p className="text-[var(--text)] text-xs font-bold m-0">Antananarivo</p>
-                <p className="text-[var(--text-sub)] text-[0.7rem] m-0">Madagascar</p>
+                <p className="text-xs font-bold m-0" style={{ background: 'linear-gradient(90deg, #2a7fc1, #f0a500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Ans d'expérience</p>
+                <p className="text-[0.7rem] m-0" style={{ color: 'rgba(255,255,255,0.5)' }}>Informatique & SIG</p>
               </div>
             </div>
           </div>
